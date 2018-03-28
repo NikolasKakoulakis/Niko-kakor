@@ -1,0 +1,51 @@
+
+    
+ 
+    
+  */
+
+nav a {
+    text-decoration: none;
+}
+
+nav ul {
+    font-family: Calibri, sans-serif;
+}
+
+.undermenynamn, nav a {
+    display: block;
+    color: white;
+    padding: 0.5em 2vw;
+    height: 2em;
+}
+
+.undermeny>li {
+    background-color: lightgrey;
+    border-bottom: solid 1px #cccccc;
+}
+
+.undermeny>li:hover, .undermeny>li:focus-within {
+    background-color: orange;
+}
+
+/* Den här klassen döljer undermenyer. Sätts i javascript. */
+.menuclosed ul.undermeny {
+    display: none;
+}
+  
+    
+    
+    
+    
+    @media (min-device-width:650px) and (min-width: 901px) and (max-width: 900px) {
+    #pagecontent {
+        display: flex;
+    }
+    
+    nav {
+        min-width: 200px;
+        /* order gör att nav hamnar efter i flex-layouten 
+         utan hamnar den på vänster sida i stället. */
+        order: 1;
+    }  
+}
