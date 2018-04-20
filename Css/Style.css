@@ -3,13 +3,67 @@
  
     
   */
+html {
+  box-sizing: border-box;
+}
 
+*, *:before, *:after {
+  box-sizing: inherit;
+}
+
+body, h1, h2, h3, h4, h5, h6, p, ol, ul {
+  margin: 0;
+  padding: 0;
+  font-weight: normal;
+  font-family: Cambria, serif;
+}
+
+ol, ul {
+  list-style: none;
+}
+
+img {
+  max-width: 100%;
+  height: auto;
+}
+
+h1, h2, h3, h4, h5, h6, p {
+    margin: 1em 0;
+}
+
+article {
+    margin: 0 2vw;
+}
+
+body {
+    width: 100vw;
+    background-image: url("../Bilder/cafe.jpg");
+}
+
+#pagecontent {
+    max-width:1000px;
+    margin:auto;
+}
 nav a {
+
     text-decoration: none;
 }
 
 nav ul {
     font-family: Calibri, sans-serif;
+}
+
+.toppmeny {
+    background-color: gray;
+    margin: 2vw;
+}
+
+.toppmeny>li {
+    display:block;
+}
+
+.toppmeny>li:hover, .toppmeny>li:focus-within {
+    background-color: black;
 }
 
 .undermenynamn, nav a {
@@ -28,24 +82,42 @@ nav ul {
     background-color: orange;
 }
 
-/* Den här klassen döljer undermenyer. Sätts i javascript. */
+
 .menuclosed ul.undermeny {
     display: none;
 }
-  
-    
-    
-    
-    
-    @media (min-device-width:650px) and (min-width: 901px) and (max-width: 900px) {
+
+
+@media (min-device-width:650px) and (min-width: 650px) and (max-width: 900px) {
     #pagecontent {
         display: flex;
     }
     
     nav {
         min-width: 200px;
-        /* order gör att nav hamnar efter i flex-layouten 
-         utan hamnar den på vänster sida i stället. */
+        
         order: 1;
-    }  
+    }
+}
+@media (min-device-width: 650px) and (min-width: 901px) {
+    .toppmeny {
+        display: flex;
+        
+        position: relative;
+        z-index: 100;
+    }
+    
+    .menuclosed ul.undermeny {
+        display: block;
+
+    }
+    
+    .toppmeny {
+        height: 2em;
+    }
+    
+    .menuclosed {
+       
+        overflow: hidden;
+    }
 }
