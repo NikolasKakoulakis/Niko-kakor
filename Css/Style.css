@@ -3,6 +3,11 @@
  
     
   */
+
+BakelserBild{
+    display:contents;
+    
+}
 html {
   box-sizing: border-box;
 }
@@ -37,7 +42,7 @@ article {
 
 body {
     width: 100vw;
-    background-image: url("../Bilder/cafe.jpg");
+    background-image: url();
 }
 
 #pagecontent {

@@ -1,4 +1,4 @@
-<html lang="sv">
+
 <head>
   <meta charset="utf-8">
 
@@ -6,14 +6,15 @@
   <meta name="description" content="En plats att träffas">
   <meta name="Owner" content="Nikolas kakoulakis">
 
-  <link rel="stylesheet" href="Css/style.css">
- <script src="js/meny.js"></script>  
+<link rel="stylesheet" href="Css/style.css">
+ <script src="js/meny.js"></script>    
 </head>
 
 <body>
-    
 <header> 
-    <h1 id="logga"></h1>
+    <h1 id="logga">Nikos kakor</h1>
+
+ <h1 id="logga"></h1>
 
 <nav id="huvudnav">
 
@@ -55,19 +56,23 @@
     </ul>
 </nav> 
     
- 
-    <article>    
-<h1>Välkomen till Nikos kakor</h1>
 
-<p>Välkomen till Nikos kakor, vi är ett cafe som ligger i den norra delen av stockholm mer exact ligger vi vid malms gatan 64.  </p>
-        <p> Navigera till Info för mer information</p>
+    <p>Namn:</p>
+    <p><input type="text" name="Namn" value="Ditt Namn"></p>
 
-<footer>
-<p class"skribent"> Nikolas kakoulakis </p> 
-<p class"publicerad-tid">Publicerad:<span class"tid"> 23 mars 2018 </span></p>
-     </footer> 
-    
-</article>
-</body>
+    <p>Mail:</p>
+    <p><input name="mail" value="Din Mail"></p>
 
-</html>
+
+    <p>Fråga: </p>
+    <p><textarea name="Fråga" rows="5" cols="20"> Fråga </textarea></p>
+
+    <p>Är Du:</p>
+    <p><input type="radio" name="ÄrDu" value="Man"> Man </p>
+    <p><input type="radio" name="ÄrDu" value="Kvinna"> Kvinna</p>
+    <p><input type="radio" name="ÄrDu" value="Annat"> Annat </p>
+
+    <p><input type="submit"></p>
+
+</form>
+    </body>
