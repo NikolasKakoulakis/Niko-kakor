@@ -3,7 +3,6 @@
  
     
   */
-
 BakelserBild{
     display:contents;
     
@@ -79,8 +78,7 @@ nav ul {
 }
 
 .undermeny>li {
-    background-color: lightgrey;
-    border-bottom: solid 1px #cccccc;
+    background-color: lightgrey; border-bottom: solid 1px #cccccc;
 }
 
 .undermeny>li:hover, .undermeny>li:focus-within {
